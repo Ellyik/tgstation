@@ -90,7 +90,7 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 PROBABILITY TRAITOR 50
 PROBABILITY NOTRAITOR 0
-PROBABILITY BROTHERS 50
+PROBABILITY BROTHERS 0
 PROBABILITY TRAITORBRO 10
 PROBABILITY TRAITORCHAN 0
 PROBABILITY INTERNAL_AFFAIRS 0
@@ -212,14 +212,14 @@ SHUTTLE_REFUEL_DELAY 12000
 ## Variables calculate how number of antagonists will scale to population.
 ## Used as (Antagonists = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
-TRAITOR_SCALING_COEFF 6
-BROTHER_SCALING_COEFF 6
+TRAITOR_SCALING_COEFF 4
+BROTHER_SCALING_COEFF 4
 CHANGELING_SCALING_COEFF 6
 
 ## Variables calculate how number of open security officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
-SECURITY_SCALING_COEFF 8
+SECURITY_SCALING_COEFF 5
 
 ## The number of objectives traitors get.
 ## Not including escaping/hijacking.
@@ -228,7 +228,7 @@ BROTHER_OBJECTIVES_AMOUNT 2
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
-#PROTECT_ROLES_FROM_ANTAGONIST
+PROTECT_ROLES_FROM_ANTAGONIST
 
 ## Uncomment to prohibit assistants from becoming most antagonists.
 #PROTECT_ASSISTANT_FROM_ANTAGONIST
@@ -267,7 +267,7 @@ EVENTS_MIN_TIME_MUL 1
 
 ## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
 ## Set to 0 to make dangerous events avaliable for all populations.
-EVENTS_MIN_PLAYERS_MUL 0
+EVENTS_MIN_PLAYERS_MUL 1
 
 
 ## AI ###
